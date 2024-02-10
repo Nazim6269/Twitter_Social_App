@@ -1,11 +1,11 @@
 import prisma from "@/utils/connect";
 import { NextResponse } from "next/server";
 
-export async function GET(params) {
-  try {
-    const userId = params.userId;
-    if (!userId || typeof userId !== "string") {
-      throw new Error("Invalid ID");
+export async function GET(request, { params }) {
+  try { 
+    const  userId  = params.userId;
+    if (!userId || typeof userId !== 'string') {
+      throw new Error('Invalid ID');
     }
     const existingUser = await prisma.user.findUnique({
       where: {
