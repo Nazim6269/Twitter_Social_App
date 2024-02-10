@@ -20,6 +20,11 @@ export async function GET(params) {
         },
       },
     });
+    if (existingUser.length === 0) {
+        return new NextResponse(JSON.stringify({ message: "No user find!" }), {
+          status: 401,
+        });
+      }
     return new NextResponse(
       JSON.stringify({ ...existingUser, followersCount }),
       { status: 200 }
