@@ -10,7 +10,7 @@ Design Routing | handle Route (React router)
 ### Nazim :
 
 Help Rizwan Design / Planing /
-Also fetch data by handle with useEssect() | also deal with (IIF) to handle async await call
+Also fetch data by handle with useEffect() | also deal with (IIF) to handle async await call
 Help Saifur to design Database Model
 
 ---
