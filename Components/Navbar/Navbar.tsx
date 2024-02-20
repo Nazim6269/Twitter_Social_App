@@ -1,17 +1,14 @@
-import { faCake } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Menus from "../Menus/Menus";
+import MenuItem from "../MenuItem/MenuItem";
 import SearchBar from "../SearchBar/SearchBar";
 
 const Navbar = () => {
   return (
-    <div className="flex px-3 py-2 justify-between mt-3 border border-gray-700">
-      {/* Menubar */}
-      <Menus />
+    <div className="flex px-3 justify-between items-center">
+      <div className="w-80">icon</div>
       {/* Navbar */}
-      <div className="flex w-96 justify-between">
+      <div className="flex w-3/5 justify-between border px-3 py-3 border-gray-700">
         <h2 className="font-semibold">Home</h2>
-        <FontAwesomeIcon className="w-7 h-7 text-blue-400" icon={faCake} />
+        icon
       </div>
       {/* SearchBar */}
       <SearchBar />
